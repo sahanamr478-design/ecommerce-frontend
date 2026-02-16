@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
+    <title>Categories - Swift Buyy</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="bi bi-bag-heart-fill me-2"></i>Swift Buyy
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="categories.html">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex me-3" id="searchForm">
+                    <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search"
+                        id="searchInput">
+                </form>
+                <div class="d-flex align-items-center">
+                    <a href="cart.html" class="btn btn-light position-relative">
+                        <i class="bi bi-cart3"></i>
+                        <span id="cart-count"
+                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            0
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="bg-dark py-5">
+        <div class="container px-4 px-lg-5 my-5">
+            <div class="text-center text-white">
+                <h1 class="display-4 fw-bolder">Shop by Category</h1>
+                <p class="lead fw-normal text-white-50 mb-0">Find exactly what you are looking for</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Categories Section -->
+    <section class="py-5">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 row-cols-1 row-cols-md-3 justify-content-center">
+
+                <!-- Accessories -->
+                <div class="col mb-5">
+                    <div class="card h-100 border-0 shadow-sm category-card">
+                        <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&w=800&q=80"
+                            class="card-img-top" alt="Accessories" style="height: 250px; object-fit: cover;">
+                        <div class="card-body text-center">
+                            <h4 class="card-title fw-bold">Accessories</h4>
+                            <p class="card-text text-muted">Sunglasses, Wallets, Bags & more</p>
+                            <a href="products.html?category=Accessories" class="btn btn-outline-dark mt-2">Explore</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Clothing -->
+                <div class="col mb-5">
+                    <div class="card h-100 border-0 shadow-sm category-card">
+                        <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                            class="card-img-top" alt="Clothing" style="height: 250px; object-fit: cover;">
+                        <div class="card-body text-center">
+                            <h4 class="card-title fw-bold">Clothing</h4>
+                            <p class="card-text text-muted">Jackets, T-Shirts, Dresses & more</p>
+                            <a href="products.html?category=Clothing" class="btn btn-outline-dark mt-2">Explore</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Electronics -->
+                <div class="col mb-5">
+                    <div class="card h-100 border-0 shadow-sm category-card">
+                        <img src="https://images.unsplash.com/photo-1526738549149-8e07eca6c147?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                            class="card-img-top" alt="Electronics" style="height: 250px; object-fit: cover;">
+                        <div class="card-body text-center">
+                            <h4 class="card-title fw-bold">Electronics</h4>
+                            <p class="card-text text-muted">Headphones, Watches, Cameras & more</p>
+                            <a href="products.html?category=Electronics" class="btn btn-outline-dark mt-2">Explore</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Home -->
+                <div class="col mb-5">
+                    <div class="card h-100 border-0 shadow-sm category-card">
+                        <img src="https://images.unsplash.com/photo-1484101403633-562f891dc89a?auto=format&fit=crop&w=800&q=80"
+                            class="card-img-top" alt="Home" style="height: 250px; object-fit: cover;">
+                        <div class="card-body text-center">
+                            <h4 class="card-title fw-bold">Home</h4>
+                            <p class="card-text text-muted">Decor, Furniture, Lighting & more</p>
+                            <a href="products.html?category=Home" class="btn btn-outline-dark mt-2">Explore</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sports -->
+                <div class="col mb-5">
+                    <div class="card h-100 border-0 shadow-sm category-card">
+                        <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=800&q=80"
+                            class="card-img-top" alt="Sports" style="height: 250px; object-fit: cover;">
+                        <div class="card-body text-center">
+                            <h4 class="card-title fw-bold">Sports</h4>
+                            <p class="card-text text-muted">Fitness Gear, Apparel, Equipment & more</p>
+                            <a href="products.html?category=Sports" class="btn btn-outline-dark mt-2">Explore</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Beauty -->
+                <div class="col mb-5">
+                    <div class="card h-100 border-0 shadow-sm category-card">
+                        <img src="https://images.unsplash.com/photo-1522338242992-e1a54906a8da?auto=format&fit=crop&w=800&q=80"
+                            class="card-img-top" alt="Beauty" style="height: 250px; object-fit: cover;">
+                        <div class="card-body text-center">
+                            <h4 class="card-title fw-bold">Beauty</h4>
+                            <p class="card-text text-muted">Skincare, Makeup, Fragrances & more</p>
+                            <a href="products.html?category=Beauty" class="btn btn-outline-dark mt-2">Explore</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; Swift Buyy 2024</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS (for cart count) -->
+    <script src="js/products.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
